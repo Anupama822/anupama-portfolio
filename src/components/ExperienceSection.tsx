@@ -19,6 +19,18 @@ const experiences = [
     ],
   },
   {
+    company: "Informatics College Pokhara",
+    role: "Mentor / Academic Tutor",
+    period: "Present",
+    location: "Pokhara",
+    highlights: [
+      "Provide mentorship and academic guidance to students pursuing IT and computer science programs",
+      "Conduct tutoring sessions on web development technologies including HTML, CSS, JavaScript, and frameworks",
+      "Support students in understanding programming concepts and best practices",
+      "Help bridge the gap between academic learning and real-world industry requirements",
+    ],
+  },
+  {
     company: "Websoft Technology Nepal",
     role: "Full Stack Web Developer",
     period: "October 2021 - December 2021",
@@ -31,7 +43,6 @@ const experiences = [
     ],
   },
 ];
-
 export const ExperienceSection = () => {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true, margin: "-100px" });
