@@ -8,7 +8,7 @@ export const Footer = () => {
           {/* Social Links - Mobile */}
           <div className="flex items-center gap-6 md:hidden">
             <a
-              href="https://github.com"
+              href="https://github.com/Anupama822"
               target="_blank"
               rel="noopener noreferrer"
               className="text-muted-foreground hover:text-primary transition-colors"

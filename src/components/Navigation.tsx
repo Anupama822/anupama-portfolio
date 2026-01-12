@@ -11,7 +11,7 @@ const navLinks = [
 
 const socialLinks = [
   { icon: Mail, href: "mailto:anupama.bajracharya822@gmail.com", label: "Email" },
-  { icon: Github, href: "https://github.com", label: "GitHub" },
+  { icon: Github, href: "https://github.com/Anupama822", label: "GitHub" },
   { icon: Linkedin, href: "https://www.linkedin.com/in/anupama-bajracharya/", label: "LinkedIn" },
 ];
 

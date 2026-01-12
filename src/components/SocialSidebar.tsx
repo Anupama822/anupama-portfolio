@@ -12,7 +12,7 @@ export const SocialSidebar = () => {
         className="fixed bottom-0 left-8 hidden md:flex flex-col items-center gap-6 z-40"
       >
         <a
-          href="https://github.com"
+          href="https://github.com/Anupama822"
           target="_blank"
           rel="noopener noreferrer"
           className="text-muted-foreground hover:text-primary hover:-translate-y-1 transition-all duration-300"

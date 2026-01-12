@@ -1,26 +1,44 @@
 import { motion } from "framer-motion";
-import { ArrowDown, Download, Github, Linkedin, Mail, Briefcase, Code, Database, Layout } from "lucide-react";
+import {
+  ArrowDown,
+  Download,
+  Github,
+  Linkedin,
+  Mail,
+  Briefcase,
+  Code,
+  Database,
+  Layout,
+} from "lucide-react";
 
 const skills = [
-  "Laravel", "Next.js", "PostgreSQL", "MySQL", "MongoDB", 
-  "Svelte", "Tailwind CSS", "TypeScript", "Docker"
+  "Laravel",
+  "Next.js",
+  "PostgreSQL",
+  "MySQL",
+  "MongoDB",
+  "Svelte",
+  "Tailwind CSS",
+  "TypeScript",
+  "Docker",
 ];
 
 const services = [
   {
     icon: Layout,
     title: "Frontend Development",
-    description: "Beautiful, responsive interfaces with React, Next.js & Svelte"
+    description:
+      "Beautiful, responsive interfaces with React, Next.js & Svelte",
   },
   {
     icon: Database,
-    title: "Backend Development", 
-    description: "Robust APIs & databases with Laravel, MySQL & PostgreSQL"
+    title: "Backend Development",
+    description: "Robust APIs & databases with Laravel, MySQL & PostgreSQL",
   },
   {
     icon: Code,
     title: "Full Stack Solutions",
-    description: "End-to-end web applications from concept to deployment"
+    description: "End-to-end web applications from concept to deployment",
   },
 ];
 
@@ -30,7 +48,10 @@ export const HeroSection = () => {
       {/* Background Glow */}
       <div className="absolute inset-0 pointer-events-none">
         <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-primary/20 rounded-full blur-3xl animate-pulse-glow" />
-        <div className="absolute bottom-1/4 right-1/4 w-80 h-80 bg-primary/10 rounded-full blur-3xl animate-pulse-glow" style={{ animationDelay: "1.5s" }} />
+        <div
+          className="absolute bottom-1/4 right-1/4 w-80 h-80 bg-primary/10 rounded-full blur-3xl animate-pulse-glow"
+          style={{ animationDelay: "1.5s" }}
+        />
       </div>
 
       <div className="container mx-auto px-6 relative z-10">
@@ -74,7 +95,10 @@ export const HeroSection = () => {
             transition={{ delay: 0.5 }}
             className="text-base md:text-lg text-muted-foreground max-w-2xl mx-auto mb-8 leading-relaxed"
           >
-            <span className="text-primary">With 4+ years of experience.</span> I build scalable web applications and empowering developers. Passionate about clean architecture, real-world projects, and turning ideas into reliable software.
+            <span className="text-primary">With 4+ years of experience.</span> I
+            build scalable web applications and empowering developers.
+            Passionate about clean architecture, real-world projects, and
+            turning ideas into reliable software.
           </motion.p>
 
           {/* CTA Buttons */}
@@ -118,7 +142,7 @@ export const HeroSection = () => {
             className="flex items-center justify-center gap-4 mb-12"
           >
             <a
-              href="https://github.com"
+              href="https://github.com/Anupama822"
               target="_blank"
               rel="noopener noreferrer"
               className="p-3 text-muted-foreground hover:text-primary hover:-translate-y-1 transition-all duration-300 bg-secondary/50 rounded-full"
@@ -143,7 +167,9 @@ export const HeroSection = () => {
           transition={{ delay: 0.8, duration: 0.6 }}
           className="mb-16"
         >
-          <p className="text-center text-muted-foreground font-mono text-sm mb-6">Technologies I work with</p>
+          <p className="text-center text-muted-foreground font-mono text-sm mb-6">
+            Technologies I work with
+          </p>
           <div className="flex flex-wrap justify-center gap-3 max-w-3xl mx-auto">
             {skills.map((skill, index) => (
               <motion.span
@@ -166,7 +192,9 @@ export const HeroSection = () => {
           transition={{ delay: 1, duration: 0.6 }}
           className="max-w-5xl mx-auto"
         >
-          <p className="text-center text-muted-foreground font-mono text-sm mb-8">What I can do for you</p>
+          <p className="text-center text-muted-foreground font-mono text-sm mb-8">
+            What I can do for you
+          </p>
           <div className="grid md:grid-cols-3 gap-6">
             {services.map((service, index) => (
               <motion.div
@@ -179,8 +207,12 @@ export const HeroSection = () => {
                 <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center mb-4 group-hover:bg-primary/20 transition-colors">
                   <service.icon className="text-primary" size={24} />
                 </div>
-                <h3 className="text-lg font-semibold text-foreground mb-2">{service.title}</h3>
-                <p className="text-sm text-muted-foreground">{service.description}</p>
+                <h3 className="text-lg font-semibold text-foreground mb-2">
+                  {service.title}
+                </h3>
+                <p className="text-sm text-muted-foreground">
+                  {service.description}
+                </p>
               </motion.div>
             ))}
           </div>
@@ -192,7 +224,10 @@ export const HeroSection = () => {
           transition={{ delay: 1.5, duration: 1 }}
           className="absolute bottom-8 left-1/2 -translate-x-1/2"
         >
-          <a href="#about" className="text-muted-foreground hover:text-primary transition-colors">
+          <a
+            href="#about"
+            className="text-muted-foreground hover:text-primary transition-colors"
+          >
             <ArrowDown className="animate-bounce" size={24} />
           </a>
         </motion.div>
