@@ -3,8 +3,8 @@ import { useInView } from "framer-motion";
 import { useRef } from "react";
 
 const skills = [
-  "Next.js",
   "Laravel",
+  "Next.js",
   "Node.js",
   "PostgreSQL",
   "MySQL",
@@ -81,14 +81,26 @@ export const AboutSection = () => {
               transition={{ delay: 0.3, duration: 0.6 }}
               className="relative group"
             >
-              <div className="relative">
+              {/* <div className="relative">
                 <div className="w-full aspect-square rounded-lg overflow-hidden bg-navy-light">
                   <div className="w-full h-full bg-gradient-to-br from-primary/20 to-primary/5 flex items-center justify-center">
                     <span className="text-8xl font-bold text-gradient">AB</span>
                   </div>
                 </div>
                 <div className="absolute inset-0 border-2 border-primary rounded-lg translate-x-4 translate-y-4 -z-10 group-hover:translate-x-2 group-hover:translate-y-2 transition-transform duration-300" />
-              </div>
+              </div> */}
+              <div className="relative">
+  <div className="w-full aspect-square rounded-lg overflow-hidden bg-navy-light">
+    <img
+      src="/images/profile.jpg"
+      alt="Profile"
+      className="w-full h-full object-cover"
+    />
+  </div>
+
+  <div className="absolute inset-0 border-2 border-primary rounded-lg translate-x-4 translate-y-4 -z-10 group-hover:translate-x-2 group-hover:translate-y-2 transition-transform duration-300" />
+</div>
+
             </motion.div>
           </div>
         </motion.div>

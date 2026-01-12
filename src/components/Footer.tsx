@@ -34,6 +34,9 @@ export const Footer = () => {
           <p className="text-muted-foreground text-sm font-mono text-center">
             Designed & Built by Anupama Bajracharya
           </p>
+          <p className="text-muted-foreground text-sm mt-0 font-mono text-center">
+            All rights reserved. ©
+          </p>
         </div>
       </div>
     </footer>

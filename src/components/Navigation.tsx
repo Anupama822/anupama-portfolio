@@ -40,7 +40,7 @@ export const Navigation = () => {
         {/* Logo / Name */}
         <motion.a
           href="#"
-          className="text-lg font-semibold text-foreground hover:text-primary transition-colors"
+          className="text-lg font-semibold text-primary hover:text-foreground transition-colors"
           whileHover={{ scale: 1.02 }}
         >
           Anupama Bajracharya

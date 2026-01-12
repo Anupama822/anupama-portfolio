@@ -78,55 +78,48 @@ export const ProjectsSection = () => {
           </div>
 
           {/* Featured Projects */}
-          <div className="space-y-32 mb-32">
-            {featuredProjects.map((project, index) => (
-              <motion.div
-                key={project.title}
-                initial={{ opacity: 0, y: 50 }}
-                animate={isInView ? { opacity: 1, y: 0 } : {}}
-                transition={{ delay: index * 0.2, duration: 0.6 }}
-                className={`relative grid md:grid-cols-12 items-center gap-4 ${
-                  index % 2 === 1 ? "md:text-right" : ""
-                }`}
-              >
-                {/* Project Image/Placeholder */}
-                <div
-                  className={`md:col-span-7 ${
-                    index % 2 === 1 ? "md:col-start-6 md:order-2" : "md:order-1"
-                  }`}
-                >
-                  <div className="relative group rounded-lg overflow-hidden">
-                    <div className="aspect-video bg-navy-light">
-                      <div className="w-full h-full bg-gradient-to-br from-primary/30 to-primary/5 flex items-center justify-center">
-                        <Folder className="w-16 h-16 text-primary/50" />
-                      </div>
-                    </div>
-                    <div className="absolute inset-0 bg-primary/10 group-hover:bg-transparent transition-colors duration-300" />
-                  </div>
-                </div>
+<div className="space-y-24 mb-24">
+  {featuredProjects.map((project, index) => (
+    <motion.div
+      key={project.title}
+      initial={{ opacity: 0, y: 40 }}
+      animate={isInView ? { opacity: 1, y: 0 } : {}}
+      transition={{ delay: index * 0.15, duration: 0.5 }}
+      className="relative grid md:grid-cols-12 gap-6 items-center"
+    >
 
-                {/* Project Content */}
-                <div
-                  className={`md:col-span-6 md:row-start-1 ${
-                    index % 2 === 1 ? "md:col-start-1 md:order-1" : "md:col-start-6 md:order-2"
-                  }`}
-                >
-                  <p className="text-primary font-mono text-sm mb-2">Featured Project</p>
-                  <h3 className="text-2xl font-bold text-foreground mb-4">{project.title}</h3>
-                  <div className="glass p-6 rounded-lg mb-4 relative z-10">
-                    <p className="text-muted-foreground leading-relaxed">{project.description}</p>
-                  </div>
-                  <div className={`flex flex-wrap gap-3 font-mono text-sm text-muted-foreground ${
-                    index % 2 === 1 ? "md:justify-end" : ""
-                  }`}>
-                    {project.tech.map((tech) => (
-                      <span key={tech}>{tech}</span>
-                    ))}
-                  </div>
-                </div>
-              </motion.div>
-            ))}
-          </div>
+      {/* Project Content */}
+      <div className="md:col-span-7 md:col-start-5">
+        <div className="mb-3">
+          <span className="text-primary font-mono text-xs tracking-wider uppercase">
+            Featured Project
+          </span>
+        </div>
+
+        <h3 className="text-2xl font-semibold text-foreground mb-3">
+          {project.title}
+        </h3>
+
+        <div className="bg-card/50 backdrop-blur-sm border border-border/50 rounded-lg p-5 mb-4 shadow-sm">
+          <p className="text-muted-foreground leading-relaxed text-sm">
+            {project.description}
+          </p>
+        </div>
+
+        <div className="flex flex-wrap gap-2.5 font-mono text-xs text-muted-foreground">
+          {project.tech.map((tech) => (
+            <span 
+              key={tech}
+              className="px-2.5 py-1 bg-muted/50 rounded border border-border/30"
+            >
+              {tech}
+            </span>
+          ))}
+        </div>
+      </div>
+    </motion.div>
+  ))}
+</div>
 
           {/* Other Projects */}
           <div className="max-w-5xl mx-auto">

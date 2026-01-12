@@ -3,6 +3,18 @@ import { useInView } from "framer-motion";
 import { useRef, useState } from "react";
 
 const experiences = [
+    {
+    company: "Informatics College Pokhara",
+    role: "Mentor / Academic Tutor",
+    period: "Augusr 2025 - Present",
+    location: "Pokhara",
+    highlights: [
+      "Provide mentorship and academic guidance to students pursuing IT and computer science programs",
+      "Conduct tutoring sessions on web development technologies including HTML, CSS, JavaScript, and frameworks",
+      "Support students in understanding programming concepts and best practices",
+      "Help bridge the gap between academic learning and real-world industry requirements",
+    ],
+  },
   {
     company: "Skybase Innovations",
     role: "Full Stack Web Developer",
@@ -18,18 +30,7 @@ const experiences = [
       "Contributed to real-world SaaS platforms and management systems serving retail, hospitality, education, and service-based organizations",
     ],
   },
-  {
-    company: "Informatics College Pokhara",
-    role: "Mentor / Academic Tutor",
-    period: "Present",
-    location: "Pokhara",
-    highlights: [
-      "Provide mentorship and academic guidance to students pursuing IT and computer science programs",
-      "Conduct tutoring sessions on web development technologies including HTML, CSS, JavaScript, and frameworks",
-      "Support students in understanding programming concepts and best practices",
-      "Help bridge the gap between academic learning and real-world industry requirements",
-    ],
-  },
+
   {
     company: "Websoft Technology Nepal",
     role: "Full Stack Web Developer",

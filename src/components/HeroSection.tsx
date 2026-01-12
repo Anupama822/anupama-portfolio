@@ -15,7 +15,7 @@ const services = [
   {
     icon: Database,
     title: "Backend Development", 
-    description: "Robust APIs & databases with Node.js, Laravel & PostgreSQL"
+    description: "Robust APIs & databases with Laravel, MySQL & PostgreSQL"
   },
   {
     icon: Code,
@@ -47,7 +47,7 @@ export const HeroSection = () => {
             transition={{ delay: 0.2 }}
             className="text-primary font-mono mb-4 text-sm md:text-base"
           >
-            Hi, my name is
+            Hi, I am
           </motion.p>
 
           <motion.h1
@@ -74,8 +74,7 @@ export const HeroSection = () => {
             transition={{ delay: 0.5 }}
             className="text-base md:text-lg text-muted-foreground max-w-2xl mx-auto mb-8 leading-relaxed"
           >
-            <span className="text-primary">4+ years of experience</span> building scalable web applications. 
-            I turn ideas into exceptional digital experiences.
+            <span className="text-primary">With 4+ years of experience.</span> I build scalable web applications and empowering developers. Passionate about clean architecture, real-world projects, and turning ideas into reliable software.
           </motion.p>
 
           {/* CTA Buttons */}
