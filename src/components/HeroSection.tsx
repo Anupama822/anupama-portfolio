@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { ArrowDown, Github, Linkedin, Mail } from "lucide-react";
+import { ArrowDown, Download, Github, Linkedin, Mail } from "lucide-react";
 
 export const HeroSection = () => {
   return (
@@ -67,6 +67,15 @@ export const HeroSection = () => {
               className="group px-8 py-4 bg-transparent border-2 border-primary text-primary font-mono rounded-lg hover:bg-primary/10 transition-all duration-300"
             >
               Get In Touch
+            </a>
+
+            <a
+              href="/Anupama_Bajracharya_Resume.pdf"
+              download
+              className="group px-8 py-4 bg-primary text-primary-foreground font-mono rounded-lg hover:bg-primary/90 transition-all duration-300 flex items-center gap-2"
+            >
+              <Download size={18} />
+              Resume
             </a>
 
             <div className="flex items-center gap-4">
