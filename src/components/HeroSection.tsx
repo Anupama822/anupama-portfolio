@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { ArrowDown, Download, Github, Linkedin, Mail } from "lucide-react";
-import profilePhoto from "@/assets/profile-photo.jpg";
+import profilePhoto from "@/assets/profile-photo-nobg.png";
 
 export const HeroSection = () => {
   return (
@@ -13,7 +13,7 @@ export const HeroSection = () => {
 
       <div className="container mx-auto px-6 relative z-10">
         <div className="flex flex-col lg:flex-row items-center justify-between gap-12 lg:gap-20">
-          {/* Profile Image with ASCII/Dot Effect */}
+          {/* Profile Image with subtle dot effect */}
           <motion.div
             initial={{ opacity: 0, scale: 0.9 }}
             animate={{ opacity: 1, scale: 1 }}
@@ -21,44 +21,25 @@ export const HeroSection = () => {
             className="relative order-1 lg:order-1 flex-shrink-0"
           >
             <div className="relative w-64 h-80 md:w-80 md:h-[400px] lg:w-96 lg:h-[480px]">
-              {/* Dotted overlay effect like Gazi's portfolio */}
+              {/* Subtle dotted overlay effect */}
               <div 
-                className="absolute inset-0 z-10 pointer-events-none mix-blend-overlay"
+                className="absolute inset-0 z-10 pointer-events-none opacity-20"
                 style={{
-                  backgroundImage: `radial-gradient(circle, hsl(var(--primary)) 1px, transparent 1px)`,
-                  backgroundSize: '4px 4px',
-                }}
-              />
-              
-              {/* Scanline effect */}
-              <div 
-                className="absolute inset-0 z-10 pointer-events-none opacity-30"
-                style={{
-                  backgroundImage: `repeating-linear-gradient(
-                    0deg,
-                    transparent,
-                    transparent 2px,
-                    rgba(0, 0, 0, 0.3) 2px,
-                    rgba(0, 0, 0, 0.3) 4px
-                  )`,
+                  backgroundImage: `radial-gradient(circle, hsl(var(--primary)) 0.5px, transparent 0.5px)`,
+                  backgroundSize: '3px 3px',
                 }}
               />
 
-              {/* Profile image */}
+              {/* Profile image - no background */}
               <img
                 src={profilePhoto}
                 alt="Anupama Bajracharya"
-                className="w-full h-full object-cover rounded-lg grayscale hover:grayscale-0 transition-all duration-500"
-                style={{
-                  filter: 'contrast(1.1) brightness(0.95)',
-                  WebkitMaskImage: 'linear-gradient(to bottom, black 70%, transparent 100%)',
-                  maskImage: 'linear-gradient(to bottom, black 70%, transparent 100%)',
-                }}
+                className="w-full h-full object-contain object-center"
               />
 
-              {/* Teal color overlay */}
+              {/* Very subtle teal tint */}
               <div 
-                className="absolute inset-0 bg-primary/20 mix-blend-color rounded-lg pointer-events-none"
+                className="absolute inset-0 bg-primary/5 mix-blend-color pointer-events-none"
               />
 
               {/* Glow effect behind image */}
