@@ -16,7 +16,6 @@ export const ContactSection = () => {
           transition={{ duration: 0.6 }}
           className="max-w-2xl mx-auto text-center"
         >
-          <p className="text-primary font-mono mb-4">04. What's Next?</p>
           <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6">Get In Touch</h2>
           
           <p className="text-muted-foreground text-lg leading-relaxed mb-12">
@@ -33,7 +32,9 @@ export const ContactSection = () => {
             </div>
             <div className="flex items-center gap-3 text-muted-foreground">
               <Phone className="w-5 h-5 text-primary" />
-              <span>+977 9840260002</span>
+              
+                            <span>+977 9705605662</span>
+
             </div>
             <div className="flex items-center gap-3 text-muted-foreground">
               <MapPin className="w-5 h-5 text-primary" />

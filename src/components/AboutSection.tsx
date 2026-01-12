@@ -31,7 +31,6 @@ export const AboutSection = () => {
           className="max-w-4xl mx-auto"
         >
           <div className="flex items-center gap-4 mb-12">
-            <span className="text-primary font-mono">01.</span>
             <h2 className="text-3xl font-bold text-foreground">About Me</h2>
             <div className="glow-line flex-1 max-w-xs" />
           </div>

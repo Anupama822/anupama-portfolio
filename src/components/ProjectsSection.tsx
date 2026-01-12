@@ -73,7 +73,6 @@ export const ProjectsSection = () => {
           transition={{ duration: 0.6 }}
         >
           <div className="flex items-center gap-4 mb-12 max-w-4xl mx-auto">
-            <span className="text-primary font-mono">03.</span>
             <h2 className="text-3xl font-bold text-foreground">Some Things I've Built</h2>
             <div className="glow-line flex-1 max-w-xs" />
           </div>

@@ -58,7 +58,6 @@ export const ExperienceSection = () => {
           className="max-w-4xl mx-auto"
         >
           <div className="flex items-center gap-4 mb-12">
-            <span className="text-primary font-mono">02.</span>
             <h2 className="text-3xl font-bold text-foreground">Where I've Worked</h2>
             <div className="glow-line flex-1 max-w-xs" />
           </div>

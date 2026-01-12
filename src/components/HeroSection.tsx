@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 import { ArrowDown, Download, Github, Linkedin, Mail, Briefcase, Code, Database, Layout } from "lucide-react";
 
 const skills = [
-  "Next.js", "Laravel", "Node.js", "PostgreSQL", "MySQL", "MongoDB", 
+  "Laravel", "Next.js", "PostgreSQL", "MySQL", "MongoDB", 
   "Svelte", "Tailwind CSS", "TypeScript", "Docker"
 ];
 
