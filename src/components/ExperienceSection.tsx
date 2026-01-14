@@ -3,7 +3,7 @@ import { useInView } from "framer-motion";
 import { useRef, useState } from "react";
 
 const experiences = [
-    {
+  {
     company: "Informatics College Pokhara",
     role: "Mentor / Academic Tutor",
     period: "Augusr 2025 - Present",
@@ -32,7 +32,7 @@ const experiences = [
   },
 
   {
-    company: "Websoft Technology Nepal",
+    company: "Websoft Technologies Pvt. Ltd.",
     role: "Full Stack Web Developer",
     period: "October 2021 - December 2021",
     location: "Pokhara",
@@ -59,7 +59,9 @@ export const ExperienceSection = () => {
           className="max-w-4xl mx-auto"
         >
           <div className="flex items-center gap-4 mb-12">
-            <h2 className="text-3xl font-bold text-foreground">Where I've Worked</h2>
+            <h2 className="text-3xl font-bold text-foreground">
+              Where I've Worked
+            </h2>
             <div className="glow-line flex-1 max-w-xs" />
           </div>
 
@@ -91,10 +93,13 @@ export const ExperienceSection = () => {
             >
               <h3 className="text-xl font-semibold text-foreground mb-1">
                 {experiences[activeTab].role}{" "}
-                <span className="text-primary">@ {experiences[activeTab].company}</span>
+                <span className="text-primary">
+                  @ {experiences[activeTab].company}
+                </span>
               </h3>
               <p className="text-muted-foreground font-mono text-sm mb-6">
-                {experiences[activeTab].period} • {experiences[activeTab].location}
+                {experiences[activeTab].period} •{" "}
+                {experiences[activeTab].location}
               </p>
 
               <ul className="space-y-4">
