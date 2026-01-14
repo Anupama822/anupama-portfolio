@@ -32,7 +32,7 @@ const experiences = [
   },
 
   {
-    company: "Websoft Technologies Pvt. Ltd.",
+    company: "Websoft Technology Nepal Pvt. Ltd.",
     role: "Full Stack Web Developer",
     period: "October 2021 - December 2021",
     location: "Pokhara",
