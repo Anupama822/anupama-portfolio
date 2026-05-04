@@ -16,25 +16,30 @@ export const ContactSection = () => {
           transition={{ duration: 0.6 }}
           className="max-w-2xl mx-auto text-center"
         >
-          <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6">Get In Touch</h2>
-          
+          <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
+            Get In Touch
+          </h2>
+
           <p className="text-muted-foreground text-lg leading-relaxed mb-12">
-            I'm currently open to new opportunities and my inbox is always open. 
-            Whether you have a question or just want to say hi, I'll try my best to get back to you!
+            I'm currently open to new opportunities and my inbox is always open.
+            Whether you have a question or just want to say hi, I'll try my best
+            to get back to you!
           </p>
 
           <div className="flex flex-col sm:flex-row items-center justify-center gap-6 mb-12">
             <div className="flex items-center gap-3 text-muted-foreground">
               <Mail className="w-5 h-5 text-primary" />
-              <a href="mailto:anupama.bajracharya822@gmail.com" className="hover:text-primary transition-colors">
+              <a
+                href="mailto:anupama.bajracharya822@gmail.com"
+                className="hover:text-primary transition-colors"
+              >
                 anupama.bajracharya822@gmail.com
               </a>
             </div>
             <div className="flex items-center gap-3 text-muted-foreground">
               <Phone className="w-5 h-5 text-primary" />
-              
-                            <span>+977 9705605662</span>
 
+              <span>+977 9840260002</span>
             </div>
             <div className="flex items-center gap-3 text-muted-foreground">
               <MapPin className="w-5 h-5 text-primary" />
